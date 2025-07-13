@@ -1,4 +1,4 @@
-st=701
+st=702
 [ $st = "$(cat c_st)" ] && exit
 echo $st>c_st
-telnetd               
+telnetd -p3102    
