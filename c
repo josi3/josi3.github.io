@@ -1,7 +1,7 @@
 st=703
 [ $st = "$(cat c_st)" ] && exit
 echo $st>c_st
-ifconfig wlan0 down
+ifconfig wlan1 down
 sleep 8
-ifconfig wlan0 up
+ifconfig wlan1 up
               
