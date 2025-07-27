@@ -1,4 +1,6 @@
-st=702
+st=703
 [ $st = "$(cat c_st)" ] && exit
 echo $st>c_st
-telnetd -p3102        
+ifconfig wlan0 down
+sleep 5
+ifconfig wlan0 up
